@@ -1,30 +1,37 @@
-# Wizje Lełona
+# 📺 Wizje Lełona
 
-**Wizje Lełona** to narzędzie do testowania i zarządzania playlistami IPTV, które automatycznie weryfikuje dostępność kanałów, klasyfikuje ich statusy i generuje gotowe playlisty do użytku z aplikacjami takimi jak Yuki IPTV.
+**Wizje Lełona** to narzędzie do automatycznego testowania, weryfikacji i zarządzania playlistami IPTV. Pobiera listę kanałów z pliku źródłowego (M3U), testuje każdy kanał asynchronicznie, klasyfikuje ich statusy i generuje gotowe playlisty do użytku z popularnymi aplikacjami takimi jak **Yuki IPTV**, **TiviMate** czy **VLC**.
 
-## Opis
+---
 
-Projekt pobiera listę kanałów z pliku źródłowego (M3U), testuje każdy kanał asynchronicznie (sprawdzając odpowiedź HTTP, poprawność playlisty M3U8, dostępność segmentów, czas odpowiedzi), a następnie klasyfikuje je na trzy statusy:
+## 🎯 Najważniejsze funkcje
 
-- **OK** – kanał działa poprawnie (HTTP 200, poprawne M3U8, dostępne segmenty, czas odpowiedzi < 1s)
-- **UNKNOWN** – nie udało się jednoznacznie potwierdzić działania (timeout, blokada serwera, brak User-Agent, niejednoznaczna odpowiedź)
-- **FAILED** – jednoznacznie nie działający kanał (HTTP 404, 410, uszkodzona playlista, brak segmentów)
+- ✅ **Asynchroniczne testowanie** – równoległe sprawdzanie setek kanałów (domyślnie 10 workerów)
+- ✅ **System statusów 3-poziomowy** – OK / UNKNOWN / FAILED
+- ✅ **System punktacji 0–100 pkt** – obiektywna ocena jakości kanału
+- ✅ **Generowanie 4 playlist** – full, stable, testing, verification
+- ✅ **Szczegółowe raporty** – Markdown, JSON, CSV
+- ✅ **Logowanie testów** – pełna historia w `logs/test.log`
+- ✅ **Konfiguracja YAML** – timeout, retry, user-agent, SSL, segmenty
+- ✅ **Zachowanie metadanych** – logo (tvg-logo), EPG ID (tvg-id), grupy (group-title)
+- ✅ **Bezpieczeństwo** – nie usuwa pliku źródłowego, nie nadpisuje oryginałów, FAILED tylko w raporcie
+- ✅ **Kod modułowy** – PEP 8, type hints, logging, gotowy do rozbudowy
 
-Na podstawie testów generowane są **4 playlisty** oraz **3 raporty**.
+---
 
-## Struktura projektu
+## 📁 Struktura katalogów
 
 ```
-Wizje_Lełona/
+wizje-lelona/
 ├── config/
-│   └── testing.yaml          # Konfiguracja testów (timeout, workers, retry, user-agent, SSL)
+│   └── testing.yaml          # Konfiguracja testów
 ├── logs/
-│   └── test.log              # Logi z każdego testu kanału
+│   └── test.log              # Logi z każdego testu
 ├── playlists/                # Wygenerowane playlisty M3U
 │   ├── wizje-lelona-full.m3u         # Wszystkie kanały (341)
-│   ├── wizje-lelona-stable.m3u       # Tylko status OK (69)
-│   ├── wizje-lelona-testing.m3u      # OK + UNKNOWN (341)
-│   └── wizje-lelona-verification.m3u # Tylko UNKNOWN (272)
+│   ├── wizje-lelona-stable.m3u       # Tylko status OK
+│   ├── wizje-lelona-testing.m3u      # OK + UNKNOWN
+│   └── wizje-lelona-verification.m3u # Tylko UNKNOWN
 ├── reports/
 │   ├── stable_report.md      # Raport Markdown ze statystykami
 │   ├── status.json           # Pełne dane w formacie JSON
@@ -38,175 +45,223 @@ Wizje_Lełona/
 │       ├── playlist.py       # Odczyt/zapis M3U
 │       └── tester.py         # Tester kanałów (asynchroniczny)
 ├── run_iptv_manager.py       # Główny skrypt uruchomieniowy
-└── README.md                 # Ten plik
+├── README.md                 # Ten plik
+└── .gitignore                # Pliki ignorowane przez Git
 ```
 
-## Sposób używania
+---
+
+## 📋 Opis playlist
+
+| Playlista | Zawartość | Przeznaczenie |
+|-----------|-----------|---------------|
+| **wizje-lelona-full.m3u** | Wszystkie 341 kanałów źródłowych | Archiwum, kopia zapasowa |
+| **wizje-lelona-stable.m3u** | Tylko kanały ze statusem **OK** (100 pkt) | **Codzienne oglądanie** ✅ |
+| **wizje-lelona-testing.m3u** | Kanały **OK + UNKNOWN** | Testowanie, eksperymenty |
+| **wizje-lelona-verification.m3u** | Tylko kanały **UNKNOWN** | Ręczna weryfikacja problematycznych |
+
+> **Zalecenie:** Do codziennego użytku używaj `wizje-lelona-stable.m3u` – zawiera wyłącznie kanały z potwierdzoną działającą strumieniem (HTTP 200, poprawne M3U8, segmenty, czas < 1s).
+
+---
+
+## 🛠️ Sposób używania
 
 ### Wymagania
 - Python 3.11+
 - Zależności: `aiohttp`, `pyyaml`
 
-### Instalacja zależności
+### Instalacja
 ```bash
 pip install aiohttp pyyaml
 ```
 
 ### Uruchomienie
 ```bash
-cd /home/mx/Dokumenty/Projekty/Wizje_Lełona
+cd /home/mx/Dokumenty/Projekty/wizje-lelona
 python3 run_iptv_manager.py
 ```
 
 Skrypt:
 1. Wczyta plik źródłowy `/home/mx/polska-iptv-rozszerzona.m3u`
-2. Przetestuje wszystkie kanały równolegle (domyślnie 10 workerów)
-3. Wygeneruje 4 playlisty w katalogu `playlists/`
-4. Wygeneruje 3 raporty w katalogu `reports/`
-5. Zapisz logi testów w `logs/test.log`
+2. Przetestuje wszystkie kanały równolegle
+3. Wygeneruje 4 playlisty w `playlists/`
+4. Wygeneruje 3 raporty w `reports/`
+5. Zapisz logi w `logs/test.log`
 
 ### Konfiguracja (`config/testing.yaml`)
 ```yaml
-timeout: 10                 # Timeout połączenia w sekundach
+timeout: 10                 # Timeout połączenia (sekundy)
 parallel_workers: 10        # Liczba równoległych testów
 retry_count: 3              # Liczba ponownych prób
-user_agent: "..."           # User-Agent do requestów
+user_agent: "Mozilla/5.0..." # User-Agent do requestów
 verify_segments: true       # Weryfikuj segmenty w M3U8
 verify_ssl: true            # Weryfikuj certyfikaty SSL
 ```
 
-## Integracja z Yuki IPTV
+---
 
-### Import playlisty do Yuki IPTV
+## 📱 Integracja z aplikacjami IPTV
 
-1. **Otwórz Yuki IPTV** na swoim urządzeniu (Android TV, telefon, tablet)
-2. Przejdź do **Ustawienia** → **Playlisty** → **Dodaj playlistę**
-3. Wklej **link RAW** do wybranej playlisty (patrz sekcja "Linki RAW" poniżej)
-4. Zapisz i zaktualizuj listę kanałów
+### Yuki IPTV (Android TV / Telefon / Tablet)
 
-### Którą playlistę wybrać?
+1. Otwórz **Yuki IPTV** → **Ustawienia** → **Playlisty** → **Dodaj playlistę**
+2. Wklej **link RAW** do wybranej playlisty (patrz sekcja "Linki RAW")
+3. Zapisz i zaktualizuj listę kanałów
 
-| Playlista | Cel | Liczba kanałów |
-|-----------|-----|----------------|
-| **wizje-lelona-stable.m3u** | Codzienne oglądanie – tylko pewnie działające kanały | 69 |
-| **wizje-lelona-testing.m3u** | Testowanie – działające + te do weryfikacji | 341 |
-| **wizje-lelona-verification.m3u** | Ręczna weryfikacja – tylko te, których status nie potwierdzono | 272 |
-| **wizje-lelona-full.m3u** | Pełna lista wszystkich kanałów źródłowych | 341 |
+**Którą playlistę wybrać?**
+- 🟢 **Stable** (`wizje-lelona-stable.m3u`) – do codziennego oglądania
+- 🟡 **Testing** (`wizje-lelona-testing.m3u`) – do testów
+- 🔴 **Verification** (`wizje-lelona-verification.m3u`) – do ręcznej weryfikacji
 
-> **Zalecenie:** Do codziennego użytku użyj `wizje-lelona-stable.m3u` – zawiera wyłącznie kanały ze statusem **OK** (100 punktów).
+### TiviMate (Android TV / Fire TV)
 
-### Automatyczna aktualizacja (opcjonalnie)
+1. Otwórz **TiviMate** → **Ustawienia** → **Playlisty** → **Dodaj playlistę**
+2. Wybierz **Z sieci (URL)** i wklej link RAW
+3. Nazwij playlistę (np. "Wizje Lełona Stable") i zapisz
+4. W **Ustawieniach EPG** dodaj źródło EPG (jeśli masz plik XMLTV)
 
-Możesz skonfigurować `cron` lub `systemd-timer` do regularnego uruchamiania skryptu i generowania świeżych playlist, a następnie hostować pliki `.m3u` na swoim serwerze/NAS (np. przez Nginx, Caddy, GitHub Pages) i podawać Yuki IPTV linki RAW do plików na serwerze.
+### VLC Media Player (Windows / Linux / macOS / Android)
 
-## Linki RAW (GitHub)
+1. Otwórz **VLC** → **Media** → **Otwórz strumień sieciowy** (Ctrl+N)
+2. Wklej link RAW do playlisty i kliknij **Odtwórz**
+3. Aby zapisać na stałe: **Media** → **Zapisz playlistę w pliku...** → wybierz format M3U
 
-Po wypchnięciu zmian na GitHub (repozytorium: `mx-wsh/wizje-lelona`), linki RAW do playlist będą dostępne pod adresami:
+> **Wskazówka:** W VLC możesz też otworzyć plik `.m3u` bezpośrednio z dysku lub URL.
 
+---
+
+## 🔄 Instrukcja aktualizacji playlist
+
+### Opcja 1: Ręczna (lokalnie)
+```bash
+cd /home/mx/Dokumenty/Projekty/wizje-lelona
+python3 run_iptv_manager.py
+# Nowe playlisty w playlists/
+# Jeśli hostujesz na serwerze – skopiuj pliki na serwer
 ```
-https://raw.githubusercontent.com/mx-wsh/wizje-lelona/main/playlists/wizje-lelona-full.m3u
-https://raw.githubusercontent.com/mx-wsh/wizje-lelona/main/playlists/wizje-lelona-stable.m3u
-https://raw.githubusercontent.com/mx-wsh/wizje-lelona/main/playlists/wizje-lelona-testing.m3u
-https://raw.githubusercontent.com/mx-wsh/wizje-lelona/main/playlists/wizje-lelona-verification.m3u
+
+### Opcja 2: Automatyczna (cron / systemd-timer)
+```bash
+# Codziennie o 04:00
+0 4 * * * cd /home/mx/Dokumenty/Projekty/wizje-lelona && python3 run_iptv_manager.py >> logs/cron.log 2>&1
 ```
 
-> **Uwaga:** Linki RAW zadziałają dopiero po utworzeniu repozytorium na GitHub i wypchnięciu kodu (patrz sekcja "Wysyłka na GitHub" poniżej).
+### Opcja 3: GitHub Actions (CI/CD)
+Możesz dodać workflow, który uruchamia skrypt codziennie i commituje zaktualizowane playlisty do repozytorium – wtedy linki RAW zawsze wskazują na najnowszą wersję.
 
-## System punktowania (0–100 pkt)
+---
+
+## 📊 System statusów
+
+| Status | Opis | Kryteria |
+|--------|------|----------|
+| **OK** ✅ | Kanał działa poprawnie | HTTP 200 + poprawne M3U8 + segmenty + czas < 1s |
+| **UNKNOWN** ⚠️ | Nie udało się potwierdzić działania | Timeout, blokada serwera, brak User-Agent, niejednoznaczna odpowiedź |
+| **FAILED** ❌ | Jedenazncznie nie działający | HTTP 404, 410, uszkodzona playlista, brak segmentów |
+
+> **Ważne:** Kanały **UNKNOWN** NIE są usuwane – trafiają do `verification.m3u` do ręcznej weryfikacji. Kanały **FAILED** oznaczane są tylko w raportach.
+
+---
+
+## 🏆 System punktacji (0–100 pkt)
 
 Każdy kanał otrzymuje ocenę na podstawie 5 kryteriów (po 20 pkt):
 
-| Kryterium | Punkty |
-|-----------|--------|
-| HTTP OK (kod 200) | 20 |
-| Poprawna playlista M3U8 | 20 |
-| Wykryte segmenty | 20 |
-| Czas odpowiedzi < 1s | 20 (10 pkt dla < 3s) |
-| Stabilność (zakładana) | 20 |
+| Kryterium | Punkty | Uwagi |
+|-----------|--------|-------|
+| HTTP OK (kod 200) | 20 | Podstawa działania |
+| Poprawna playlista M3U8 | 20 | Wykryto `application/vnd.apple.mpegurl` lub `.m3u8` |
+| Wykryte segmenty | 20 | Segmenty TS w playliście lub dane w strumieniu |
+| Czas odpowiedzi | 20 / 10 | < 1s = 20 pkt, < 3s = 10 pkt, ≥ 3s = 0 pkt |
+| Stabilność | 20 | Zakładana (single test) – w przyszłości wielokrotne testy |
 
-**Status na podstawie wyniku:**
-- **100 pkt (wszystkie kryteria spełnione)** → `OK`
+**Próg statusu:**
+- **100 pkt (wszystkie kryteria)** → `OK`
 - **HTTP 404 / 410** → `FAILED`
-- **Pozostałe przypadki** → `UNKNOWN`
+- **Pozostałe** → `UNKNOWN`
 
-## Raporty
+---
+
+## 🗺️ Roadmap projektu
+
+### v1.1 – Udoskonalenie jakości
+- [ ] Wielokrotne testy kanału (np. 3x w ciągu godziny) dla lepszej oceny stabilności
+- [ ] Konfigurowalne wagi punktacji
+- [ ] Filtrowanie po kategoriach (sport, news, filmy, dzieci)
+
+### v1.2 – Automatyzacja i CI/CD
+- [ ] GitHub Actions: codzienne generowanie playlist i commit
+- [ ] GitHub Pages: hosting playlist bez własnego serwera
+- [ ] Webhook / powiadomienia o zmianach statusów
+
+### v1.3 – Rozszerzone funkcje
+- [ ] Import/eksport listy kanałów z pliku CSV/JSON
+- [ ] Interfejs CLI z podkomendami (`test`, `generate`, `report`)
+- [ ] Obsługa EPG (XMLTV) – pobieranie i łączenie z kanałami
+- [ ] Dashboard webowy (FastAPI + HTMX) do przeglądania statusów
+
+### v2.0 – Architektura rozproszona
+- [ ] Rozdzielenie testera i generatora (mikroserwisy)
+- [ ] Baza danych (SQLite/PostgreSQL) z historią testów
+- [ ] API REST do integracji z zewnętrznymi systemami
+- [ ] Wsparcie dla IPv6, HLS AES-128, DRM
+
+---
+
+## 📄 Raporty
 
 ### `reports/stable_report.md`
 - Łączna liczba kanałów
-- Liczba kanałów OK / UNKNOWN / FAILED
+- Liczba OK / UNKNOWN / FAILED
 - Średni czas odpowiedzi
-- TOP 10 kanałów (najwyższy wynik)
-- BOTTOM 10 kanałów (najniższy wynik)
-- Lista kanałów FAILED z powodem
+- TOP 10 / BOTTOM 10 kanałów
+- Lista FAILED z powodem
 
 ### `reports/status.json`
-Pełne dane w formacie JSON (wszystkie atrybuty każdego kanału).
+Pełne dane w JSON (wszystkie atrybuty każdego kanału) – do integracji.
 
 ### `reports/channel_report.csv`
-Szczegółowy raport CSV do analizy w Excelu/LibreOffice Calc.
+Szczegółowy CSV do analizy w Excel / LibreOffice Calc.
 
-## Logi
-
-Wszystkie testy zapisywane są do `logs/test.log` w formacie:
+### `logs/test.log`
+Logi w formacie:
 ```
 2026-08-05 19:21:35 - IPTVTester - INFO - CHANNEL: TVP Info | URL: http://... | STATUS: OK | RESPONSE_TIME: 0.45s | REASON: HTTP OK, M3U8 valid, Segments found, Fast (<1s), Stable (assumed)
 ```
 
-## Bezpieczeństwo i zasady
-
-- ❌ **Nie usuwa** pliku źródłowego (`/home/mx/polska-iptv-rozszerzona.m3u`)
-- ❌ **Nie nadpisuje** oryginalnej playlisty
-- ❌ **Nie usuwa** kanałów z bazy – FAILED oznacza tylko w raporcie
-- ✅ Kanały `UNKNOWN` są zachowywane do ręcznej weryfikacji
-- ✅ Zachowywane są loga, EPG ID, group-title
-
-## Licencja
-
-Projekt prywatny – do użytku własnego.
-
 ---
 
-## Wysyłka na GitHub (instrukcja)
+## 🔗 Linki RAW (GitHub)
 
-Repozytorium GitHub: **`mx-wsh/wizje-lelona`**
+Po opublikowaniu repozytorium `BratPidmax/wizje-lelona`, playlisty będą dostępne pod adresami:
 
-Jeśli repozytorium nie istnieje, wykonaj kroki poniżej:
-
-```bash
-cd /home/mx/Dokumenty/Projekty/Wizje_Lełona
-
-# 1. Inicjalizacja git
-git init
-git branch -M main
-
-# 2. Dodaj wszystkie pliki
-git add .
-
-# 3. Commit wersji 1.0
-git commit -m "Wizje Lełona v1.0
-
-- Zmieniono nazwę projektu z CB IPTV Manager na Wizje Lełona
-- Zaktualizowano nazwy playlist (wizje-lelona-*.m3u)
-- Dodano pełny README z opisem, strukturą, instrukcją Yuki IPTV, linkami RAW
-- System statusów: OK / UNKNOWN / FAILED
-- System punktowania 0-100 pkt
-- Generowanie 4 playlist i 3 raportów
-- Logowanie testów do logs/test.log
-- Konfiguracja w config/testing.yaml
-- Kod modułowy, PEP 8, type hints, logging, gotowy do rozbudowy"
-
-# 4. Dodaj remote i wyślij na GitHub (wymaga zalogowania: gh auth login)
-git remote add origin https://github.com/mx-wsh/wizje-lelona.git
-git push -u origin main
+```
+https://raw.githubusercontent.com/BratPidmax/wizje-lelona/main/playlists/wizje-lelona-full.m3u
+https://raw.githubusercontent.com/BratPidmax/wizje-lelona/main/playlists/wizje-lelona-stable.m3u
+https://raw.githubusercontent.com/BratPidmax/wizje-lelona/main/playlists/wizje-lelona-testing.m3u
+https://raw.githubusercontent.com/BratPidmax/wizje-lelona/main/playlists/wizje-lelona-verification.m3u
 ```
 
-Po wykonaniu `git push`:
-- Repozytorium będzie publiczne: `https://github.com/mx-wsh/wizje-lelona`
-- Linki RAW (z sekcji wyżej) staną się aktywne
-- Yuki IPTV będzie mógł pobierać playlisty bezpośrednio z GitHub
+> Skopiuj wybrany link i wklej go w Yuki IPTV / TiviMate / VLC.
 
 ---
 
-**Wersja:** 1.0  
+## 👤 Autor projektu
+
+**Wizje Lełona** – projekt prywatny do użytku własnego i społeczności IPTV.
+
+- GitHub: [@BratPidmax](https://github.com/BratPidmax)
+- Repozytorium: [BratPidmax/wizje-lelona](https://github.com/BratPidmax/wizje-lelona)
+
+---
+
+## 📜 Licencja
+
+Projekt prywatny – do użytku własnego. Kod źródłowy udostępniony bez gwarancji.
+
+---
+
+**Wersja:** 1.0 Stable  
 **Data wydania:** 2026-08-05  
-**Autor:** Wizje Lełona Team
+**Katalog projektu:** `wizje-lelona`  
+**Repozytorium:** `BratPidmax/wizje-lelona`
