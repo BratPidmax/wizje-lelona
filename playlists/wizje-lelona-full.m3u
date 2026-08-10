@@ -37,8 +37,10 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105381
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105382
 #EXTINF:-1 tvg-id="AXNBlack.us@Poland" tvg-logo="https://i.imgur.com/Peo1QiZ.png" group-title="Movies",AXN Black Poland (576p)
 http://185.227.34.179:8080/axn-black/index.m3u8
-#EXTINF:-1,AXN Spin
-http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105383
+#EXTINF:-1 tvg-id="AXNPoland.pl@SD" tvg-logo="https://i.imgur.com/i5wOhkf.png",like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Movies",AXN Poland
+http://193.24.244.60:1001/udp/239.254.5.5:6060
+#EXTINF:-1 tvg-id="AXNSpin.pl@SD" tvg-logo="https://i.imgur.com/LGEbwnT.png",like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Series",AXN Spin
+http://193.24.244.60:1001/udp/239.254.5.6:6060
 #EXTINF:-1,AXN White
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105384
 #EXTINF:-1 tvg-id="AXNWhite.us@Poland" tvg-logo="https://i.imgur.com/47IKxmt.png" group-title="Entertainment",AXN White Poland (576p)
@@ -141,8 +143,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105489
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105493
 #EXTINF:-1,Disney XD
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105494
-#EXTINF:-1 tvg-id="dlaCiebietv.pl@SD" tvg-logo="https://i.imgur.com/Tf32BJa.png" group-title="General",dlaCiebie.tv (1080p) [Not 24/7]
-https://6034e09794f07.streamlock.net/tv/dlaCiebieTv/playlist.m3u8
 #EXTINF:-1 tvg-id="DrGMedicalExaminer.pl@HD" group-title="General",Dr G Medical Examiner
 https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883008
 #EXTINF:-1,DTX
@@ -199,6 +199,8 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105373
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105377
 #EXTINF:-1,Filmbox Premium
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105376
+#EXTINF:-1 tvg-id="FILMBOXPlusAction.pl@HD" tvg-logo="https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Baction.png",like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Movies",FILMBOX+ Action
+https://polska.hach.workers.dev/14864.m3u8
 #EXTINF:-1,Fokus TV
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105420
 #EXTINF:-1,Food Network
@@ -261,8 +263,8 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105511
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105509
 #EXTINF:-1,MTV Polska
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105510
-#EXTINF:-1 tvg-id="MusicBoxPolska.pl@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyN14NgigtUnImvVp9DqgbKY5c9Nsl-EqLkPX7PzYcl924yK77GycmSj2E&s=10" group-title="Music",Music Box Polska [Geo-blocked]
-https://vs2133.vcdn.biz/0f0f85e2ea3607b5c396ef68d55c3168_megogo/live/hls/b/4000/u_sid/0/o/156751011/rsid/062147ff-ed0c-4d9c-a131-2bf42026e640/u_uid/0/u_vod/1/u_device/embed_all/u_devicekey/_embed_web/lip/57.128.235.172*asn/type.live/playlist.m3u8
+#EXTINF:-1 tvg-id="MusicBoxPolska.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Music_Box_UA_%282018%29.svg/960px-Music_Box_UA_%282018%29.svg.png",like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Music",Music Box Polska
+http://193.24.244.60:1001/udp/239.254.4.237:6060
 #EXTINF:-1,Nat Geo People
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105425
 #EXTINF:-1,National Geographic

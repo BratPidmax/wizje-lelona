@@ -29,8 +29,10 @@ http://51.38.132.146:8877/ATMRR/index.m3u8
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105381
 #EXTINF:-1,AXN Black
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105382
-#EXTINF:-1,AXN Spin
-http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105383
+#EXTINF:-1 tvg-id="AXNPoland.pl@SD" tvg-logo="https://i.imgur.com/i5wOhkf.png",like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Movies",AXN Poland
+http://193.24.244.60:1001/udp/239.254.5.5:6060
+#EXTINF:-1 tvg-id="AXNSpin.pl@SD" tvg-logo="https://i.imgur.com/LGEbwnT.png",like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Series",AXN Spin
+http://193.24.244.60:1001/udp/239.254.5.6:6060
 #EXTINF:-1,AXN White
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105384
 #EXTINF:-1,Baby TV
@@ -51,8 +53,6 @@ http://149.5.17.34:20041/play/a076
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/119834
 #EXTINF:-1,BollywooD
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/155041
-#EXTINF:-1 tvg-id="BTB3.pl@HD" tvg-logo="https://i.imgur.com/Z193940.png" group-title="General",BTB 3 (1080p)
-https://emisja3.btb.j00r.us/iptv/session/3/hls.m3u8
 #EXTINF:-1,Canal+ 1
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105363
 #EXTINF:-1,Canal+ 360
@@ -165,8 +165,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105376
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105420
 #EXTINF:-1,Food Network
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105419
-#EXTINF:-1 tvg-id="Fox.pl@SD" tvg-logo="https://i.imgur.com/hSDN9YQ.png" group-title="Entertainment",Fox [Not 24/7]
-http://315e5a5d.ottrast.com/iptv/MM4E93NGF5LADZ/6108/index.m3u8
 #EXTINF:-1,FX
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105378
 #EXTINF:-1,FX Comedy
@@ -199,8 +197,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105390
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105399
 #EXTINF:-1,MiniMini+
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105495
-#EXTINF:-1 tvg-id="MonsterJam.us@SD" tvg-logo="https://provider-static.plex.tv/epg/cms/production/23824964-562b-4498-9eaa-d6262cb7e0c3/Monster_Jam_Logo_on_Transparent_1500x1000_Casey_Murawski.png" group-title="Outdoor;Sports",Monster Jam (720p)
-https://jmp2.uk/plu-65bcc9c8d77d450008b34c6b.m3u8
 #EXTINF:-1,Motowizja
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105443
 #EXTINF:-1,MTV 00s
@@ -211,8 +207,8 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105511
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105509
 #EXTINF:-1,MTV Polska
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105510
-#EXTINF:-1 tvg-id="MusicBoxPolska.pl@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyN14NgigtUnImvVp9DqgbKY5c9Nsl-EqLkPX7PzYcl924yK77GycmSj2E&s=10" group-title="Music",Music Box Polska [Geo-blocked]
-https://vs2133.vcdn.biz/0f0f85e2ea3607b5c396ef68d55c3168_megogo/live/hls/b/4000/u_sid/0/o/156751011/rsid/062147ff-ed0c-4d9c-a131-2bf42026e640/u_uid/0/u_vod/1/u_device/embed_all/u_devicekey/_embed_web/lip/57.128.235.172*asn/type.live/playlist.m3u8
+#EXTINF:-1 tvg-id="MusicBoxPolska.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Music_Box_UA_%282018%29.svg/960px-Music_Box_UA_%282018%29.svg.png",like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Music",Music Box Polska
+http://193.24.244.60:1001/udp/239.254.4.237:6060
 #EXTINF:-1,Nat Geo People
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105425
 #EXTINF:-1,National Geographic
@@ -241,10 +237,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105437
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105512
 #EXTINF:-1,Paramount Network
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105395
-#EXTINF:-1 tvg-id="PFLMMA.us@SD" tvg-logo="https://provider-static.plex.tv/epg/cms/production/96dd0531-b500-4bd4-93ca-763cbf46defe/1500x1000_PFL_SHIELD_DARK_BG_-_Allie_Dinsmore.png" group-title="Sports",PFL MMA (720p)
-https://jmp2.uk/plu-64f6180130ab3300083d896b.m3u8
-#EXTINF:-1 tvg-id="PixelTV.pl@HD" tvg-logo="https://i.ibb.co/S4jM2WXk/pixeltv.png" group-title="Animation;Kids",Pixel.tv (720p)
-https://jmp2.uk/plu-66bb374ba4ee27000841a62c.m3u8
 #EXTINF:-1,Planete+
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105426
 #EXTINF:-1,Polo TV
@@ -255,8 +247,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105449
 https://vs2124.vcdn.biz/fab48aecdc2eda856dcf108cff23f0af_megogo/live/hls/b/700_2490_4000/u_sid/0/o/159818621/rsid/0e266c99-a1e7-4d85-b3c6-173eeac55ae0/u_uid/0/u_vod/0/u_device/cms_webandroid/u_devicekey/_site_mobile/lip/217.114.34.212*asn/u_srvc/81255/u_did/web_6E1HxqCXWtsLOzgk7aeKRdeKchKJwKjL/type.live/chunklist-sid6761789432318948657-b4000000.m3u8
 #EXTINF:-1,Polsat
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105349
-#EXTINF:-1 tvg-id="Polsat.pl@SD" tvg-logo="https://i.imgur.com/xff6zGN.png" group-title="General",Polsat (1080p) [Geo-blocked]
-https://cdn-s-playnow-live.pluscdn.pl/ch/1502600/308/dash/20a18c30/live.mpd
 #EXTINF:-1,Polsat 2
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105350
 #EXTINF:-1,Polsat Cafe
@@ -277,8 +267,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105514
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105465
 #EXTINF:-1,Polsat News 2
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105466
-#EXTINF:-1 tvg-id="PolsatNews2.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Polsat_News_2_2021_gradient.svg/500px-Polsat_News_2_2021_gradient.svg.png" group-title="News",Polsat News 2 (1080p) [Geo-blocked]
-https://cdn-s-lb2.pluscdn.pl/lv/1533809/392/dash/3de17d4a/live.mpd
 #EXTINF:-1,Polsat News Polityka
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/155148
 #EXTINF:-1,Polsat Play
@@ -339,8 +327,6 @@ http://193.24.244.60:1001/udp/239.254.4.122:6060
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/134089
 #EXTINF:-1,Romance TV
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105394
-#EXTINF:-1 tvg-id="RTGint.ru@SD" tvg-logo="https://i.imgur.com/ZpUNou4.png",like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Travel",RTG int.
-http://213.91.179.28:8000/play/a0bw
 #EXTINF:-1,SciFi
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105396
 #EXTINF:-1 tvg-id="SkyShowtime1.fi@Poland" tvg-logo="https://i.imgur.com/Dw9Yv9P.png" group-title="Undefined",SkyShowtime 1 Poland
@@ -373,8 +359,6 @@ https://vs2127.vcdn.biz/e90db3346c3e253035dbcc543d3b00ac_megogo/live/hls/b/700_2
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105498
 #EXTINF:-1,TLC
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105446
-#EXTINF:-1 tvg-id="TNAWrestlingChannel.pl@SD" tvg-logo="https://provider-static.plex.tv/epg/cms/production/5d4f68c3-82af-45e7-b2c4-39aff69f3ce0/TNAWrestling_Plex_LogoforDarkBG_1500x1000_-_Alex_TushinghamRDX.png" group-title="Undefined",TNA Wrestling (720p)
-https://jmp2.uk/plu-59b722526996084038c01e1b.m3u8
 #EXTINF:-1,TNT
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/155234
 #EXTINF:-1,TOP Kids
@@ -389,8 +373,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105354
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105355
 #EXTINF:-1,TV Okazje
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105459
-#EXTINF:-1 tvg-id="TVOkazje.pl@SD" tvg-logo="https://i.imgur.com/DbALkkV.png" group-title="Undefined",TV Okazje (1080p) [Geo-blocked]
-https://lb2-e3-20.pluscdn.pl/ch/1523532/366/dash/2cf383bb/live.mpd
 #EXTINF:-1,TV Puls
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105357
 #EXTINF:-1 tvg-id="TVPuls.pl@SD" tvg-logo="https://i.imgur.com/gXA7pai.png" group-title="Undefined",TV Puls (1080p) [Geo-blocked]
@@ -399,14 +381,8 @@ https://vs2120.vcdn.biz/6c6efc7232fd4d41767bcf4432d64e46_megogo/live/hls/b/700_2
 http://193.24.244.60:1001/udp/239.254.4.121:6060
 #EXTINF:-1 tvg-id="TVRepublika.pl" tvg-logo="https://i.imgur.com/ljpK6dZ.png" group-title="Poland",TV Republika
 https://redir.cache.orange.pl/jupiter/o1-cl7/ssl/live/tvrepublika/live.m3u8
-#EXTINF:-1 tvg-id="TVRepublika.pl@SD" tvg-logo="https://i.imgur.com/ljpK6dZ.png" group-title="Undefined",TV Republika (1080p) [Geo-blocked]
-https://cdn-s-lb2.pluscdn.pl/ch/1454064/17/dash/cc140553/live.mpd
 #EXTINF:-1,TV Trwam
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105461
-#EXTINF:-1 tvg-id="TVTrwam.pl@SD" tvg-logo="https://i.imgur.com/yq10wS5.png" group-title="Undefined",TV Trwam (1080p) [Geo-blocked]
-https://live-ch1.trwam.cf.insyscd.net/out/v1/b99041a282774d4a8fe84a54243af5de/trwamtv-live-ch1.mpd
-#EXTINF:-1 tvg-id="TV4.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d4/TV4Polska.png" group-title="Undefined",TV4 (1080p) [Geo-blocked]
-https://cdn-s-playnow-live.pluscdn.pl/ch/1502601/309/dash/e25c2c93/live.mpd
 #EXTINF:-1,TVC Polska
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105445
 #EXTINF:-1,TVN
@@ -469,8 +445,6 @@ https://www.tvkaista.net/stream-forwarder/get.php?x=TVPABC2
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/134087
 #EXTINF:-1,TVP HD
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105348
-#EXTINF:-1 tvg-id="TVPHistoria.pl@SD" tvg-logo="https://i.imgur.com/Bc4QZiy.png" group-title="Undefined",TVP Historia
-https://tvp3.cache.orange.pl/tvp/live/JQmETX58eM7X32i5AVKZRQ/1783368986/video/live/live171/nginx/TKH/156/master.m3u8
 #EXTINF:-1 tvg-id="TVPHistoria2.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/TVP_Historia_2_%282021%29.svg/640px-TVP_Historia_2_%282021%29.svg.png" group-title="Poland",TVP Historia 2
 https://www.tvkaista.net/stream-forwarder/get.php?x=TVPHistoria2
 #EXTINF:-1 tvg-id="TVPInfo.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVP_Info_logo.svg/640px-TVP_Info_logo.svg.png" group-title="Poland",TVP Info
@@ -501,8 +475,6 @@ https://www.tvkaista.net/stream-forwarder/get.php?x=TVP1
 https://estreams.tv.nej.cz/dash/CH_TVP1_Portable.ism/playlist.mpd
 #EXTINF:-1 tvg-id="TVP2.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TVP2_logo.svg/640px-TVP2_logo.svg.png" group-title="Poland",TVP2
 https://strims.top/tv/tvp2.m3u8
-#EXTINF:-1 tvg-id="TVP2.pl@SD" tvg-logo="https://i.imgur.com/XxCc32B.png",like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Undefined",TVP2 (1080p)
-https://tvpi.travny.workers.dev/tvp2.m3u
 #EXTINF:-1 tvg-id="TVP3Warszawa.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/TVP3_%282016%29.svg/640px-TVP3_%282016%29.svg.png" group-title="Poland",TVP3 Warszawa
 https://www.tvkaista.net/stream-forwarder/get.php?x=TVP3Warszawa
 #EXTINF:-1,TVS
@@ -537,8 +509,6 @@ http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105464
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/151853
 #EXTINF:-1,Xtreme TV
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/155040
-#EXTINF:-1 tvg-id="ZNation.us@SD" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/dff3a92e-c4aa-49c4-b1b6-4a847428b8d5-width200-quality90.png" group-title="Series",Z Nation
-https://jmp2.uk/plu-66b3af48d2d50d00083d6936.m3u8
 #EXTINF:-1,Zoom TV
 http://bocian.io:8880/waldek63/ODY1NjAwMTQ1/105458
 #EXTINF:-1 tvg-id="ZoomTV.pl@SD" tvg-logo="https://i.imgur.com/UtZM4zm.png" group-title="Undefined",Zoom TV (1080p) [Geo-blocked]

@@ -1,6 +1,4 @@
-"""
-Channel tester module.
-"""
+"""Channel tester module."""
 
 import asyncio
 import aiohttp
@@ -39,13 +37,15 @@ class ChannelTester:
         """Test a single channel and update its status."""
         start_time = time.time()
         session = None
+        ssl_to_try = self.config["verify_ssl"]
+        fallback_attempted = False
         try:
-            # Create a session with custom settings
-            connector = aiohttp.TCPConnector(ssl=self.config["verify_ssl"])
+            # Create initial session
+            connector = aiohttp.TCPConnector(ssl=ssl_to_try)
             session = aiohttp.ClientSession(
                 connector=connector,
                 timeout=aiohttp.ClientTimeout(total=self.config["timeout"]),
-                headers={"User-Agent": self.config["user_agent"]}
+                headers={"User-Agent": self.config["user_agent"]},
             )
 
             # Try to fetch the channel URL
@@ -58,7 +58,6 @@ class ChannelTester:
                         # Check if it's a M3U8 playlist
                         content_type = response.headers.get('Content-Type', '')
                         is_m3u8 = 'application/vnd.apple.mpegurl' in content_type or \
-                                  'application/vnd.apple.mpegurl' in content_type or \
                                   channel.url.endswith('.m3u8') or \
                                   '.m3u8?' in channel.url
 
@@ -85,8 +84,31 @@ class ChannelTester:
                                 channel.stream_type = "Direct" if channel.has_segments else "Unknown"
 
                         # Determine status and score
-                        self._determine_status_and_score(channel)
+                        self._determine_status_and_score(channel, ssl_fallback=fallback_attempted)
                         break
+                except aiohttp.ClientSSLError as e:
+                    if ssl_to_try and not fallback_attempted:
+                        # Switch to fallback without verifying SSL
+                        ssl_to_try = False
+                        fallback_attempted = True
+                        # Close current session and create a new one with ssl=False
+                        await session.close()
+                        connector = aiohttp.TCPConnector(ssl=False)
+                        session = aiohttp.ClientSession(
+                            connector=connector,
+                            timeout=aiohttp.ClientTimeout(total=self.config["timeout"]),
+                            headers={"User-Agent": self.config["user_agent"]},
+                        )
+                        await asyncio.sleep(1 * (attempt + 1))  # Exponential backoff
+                        continue
+                    else:
+                        if attempt == self.config["retry_count"] - 1:
+                            channel.http_code = 0
+                            channel.response_time = time.time() - start_time
+                            channel.reason = f"SSL Error: {str(e)[:100]}"
+                        else:
+                            await asyncio.sleep(1 * (attempt + 1))
+                            continue
                 except asyncio.TimeoutError:
                     if attempt == self.config["retry_count"] - 1:
                         channel.http_code = 408
@@ -100,8 +122,7 @@ class ChannelTester:
                         channel.response_time = time.time() - start_time
                         channel.reason = f"Error: {str(e)[:100]}"
                     else:
-                        await asyncio.sleep(1 * (attempt + 1))
-
+                        await asyncio.sleep(1 * (attempt + 1))  # Exponential backoff
         except Exception as e:
             channel.http_code = 0
             channel.response_time = time.time() - start_time
@@ -119,7 +140,7 @@ class ChannelTester:
         channel.tested_at = time.time()
         return channel
 
-    def _determine_status_and_score(self, channel: Channel) -> None:
+    def _determine_status_and_score(self, channel: Channel, ssl_fallback: bool = False) -> None:
         """Determine the status and score of the channel based on test results."""
         score = 0
         reason_parts = []
@@ -171,13 +192,17 @@ class ChannelTester:
         score += 20  # Assume stable for now
         reason_parts.append("Stable (assumed)")
 
+        # SSL fallback warning
+        if ssl_fallback:
+            reason_parts.append("SSL certificate warning")
+
         channel.score = score
 
         # Determine status
-        if channel.http_code == 200 and channel.is_m3u8 and channel.has_segments and channel.response_time < 1.0:
-            channel.status = "OK"
-        elif channel.http_code in [404, 410]:
+        if channel.http_code in [404, 410]:
             channel.status = "FAILED"
+        elif score >= 80:
+            channel.status = "OK"
         else:
             channel.status = "UNKNOWN"
 
