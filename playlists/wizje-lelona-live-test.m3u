@@ -1,0 +1,301 @@
+#EXTM3U
+# Wizje Lelona LIVE - playlista testowa (ETAP 2C-TEST, branch tvp-test)
+# Wygenerowano: 2026-10-08 15:23:47 CEST
+# Kanalow: 147 | wylacznie playable (realny segment HTTP 200/206)
+# Zrodla: TVP (oficjalne API) + iptv-org countries/pl.m3u + obecna lista
+# Nie uzywac w produkcji. Tokeny TVP sa krotkotrwale.
+
+#EXTINF:-1 tvg-id="AXNBlack.us" tvg-name="AXN Black Poland (576p)" group-title="Film",AXN Black Poland (576p)
+http://185.227.34.179:8080/axn-black/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusFestival.pl" tvg-name="FILMBOX+ Festival Poland" group-title="Film",FILMBOX+ Festival Poland
+http://92.114.85.87:8018/play/a009/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusOne.pl" tvg-name="FILMBOX+ One (1080p)" group-title="Film",FILMBOX+ One (1080p)
+http://57.128.231.171:8080/236/index.m3u8
+#EXTINF:-1 tvg-id="KinoPolska.pl" tvg-name="Kino Polska (1080p)" group-title="Film",Kino Polska (1080p)
+http://57.128.231.171:8080/238/index.m3u8
+#EXTINF:-1 tvg-id="BBCEarth.uk" tvg-name="BBC Earth (1080p)" group-title="Informacyjne",BBC Earth (1080p)
+http://57.128.231.171:8080/307/index.m3u8
+#EXTINF:-1 tvg-id="DaVinci.pl" tvg-name="Da Vinci (Poland) (1080p)" group-title="Informacyjne",Da Vinci (Poland) (1080p)
+http://57.128.231.171:8080/284/index.m3u8
+#EXTINF:-1 tvg-id="Euronews.pl" tvg-name="Euronews (720p)" group-title="Informacyjne",Euronews (720p)
+https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8
+#EXTINF:-1 tvg-id="NewsmaxPolska.pl" tvg-name="Newsmax Polska" group-title="Informacyjne",Newsmax Polska
+http://91.228.35.249:8001/1:0:1:1C8A:1CE8:71:820000:0:0:0
+#EXTINF:-1 tvg-id="PolsatNews2.pl" tvg-name="Polsat News 2 (1080p) [Geo-blocked]" group-title="Informacyjne",Polsat News 2 (1080p) [Geo-blocked]
+https://cdn-s-lb2.pluscdn.pl/lv/1533809/392/dash/3de17d4a/live.mpd
+#EXTINF:-1 tvg-id="PolsatViasatExplore.pl" tvg-name="Polsat Viasat Explore" group-title="Informacyjne",Polsat Viasat Explore
+http://92.114.85.87:8014/play/a00g/index.m3u8
+#EXTINF:-1 tvg-id="PolsatViasatHistory.pl" tvg-name="Polsat Viasat History (1080p)" group-title="Informacyjne",Polsat Viasat History (1080p)
+http://185.227.34.179:8080/polsat-viasat-history-hd/index.m3u8
+#EXTINF:-1 tvg-id="PolsatViasatNature.pl" tvg-name="Polsat Viasat Nature" group-title="Informacyjne",Polsat Viasat Nature
+http://92.114.85.87:8016/play/a004/index.m3u8
+#EXTINF:-1 tvg-id="TelewizjaBiznesowa.pl" tvg-name="Telewizja Biznesowa (1080p)" group-title="Informacyjne",Telewizja Biznesowa (1080p)
+https://s-pl-01.mediatool.tv/playout/tbpl-abr/index.m3u8
+#EXTINF:-1 tvg-id="AdventureTV.pl" tvg-name="Adventure TV (1080p)" group-title="Inne",Adventure TV (1080p)
+http://57.128.231.171:8080/320/index.m3u8
+#EXTINF:-1 tvg-id="Bigtime.pl" tvg-name="Bigtime" group-title="Inne",Bigtime
+https://103f01c3ff79408e83c9212f8a374ecc.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/RakutenTV-eu_BjgtjmeDarmoweFilmy/playlist.m3u8
+#EXTINF:-1 tvg-id="BuzzfeedUnsolved.pl@FAST" tvg-name="Buzzfeed Unsolved" group-title="Inne",Buzzfeed Unsolved
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883099
+#EXTINF:-1 tvg-id="CarCityAdventures.pl" tvg-name="Car City Adventures" group-title="Inne",Car City Adventures
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883095
+#EXTINF:-1 tvg-id="EWTNPoland.pl" tvg-name="EWTN Poland (1080p)" group-title="Inne",EWTN Poland (1080p)
+https://cdn3.wowza.com/1/ZHdrMWt1NjlDSzFu/bzdDVG10/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-id="Grjngo.pl" tvg-name="Grjngo" group-title="Inne",Grjngo
+https://b6c7c7d1020a4588982ca7c2625f85d1.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/RakutenTV-eu_GrjngoWesterny/playlist.m3u8
+#EXTINF:-1 tvg-id="HardKnocksFightingChampionship.pl" tvg-name="Hard Knocks Fighting Championship" group-title="Inne",Hard Knocks Fighting Championship
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883037
+#EXTINF:-1 tvg-id="HomeTV.pl" tvg-name="Home TV" group-title="Inne",Home TV
+http://92.114.85.87:8010/play/a00h/index.m3u8
+#EXTINF:-1 tvg-id="Moconomy.pl" tvg-name="Moconomy" group-title="Inne",Moconomy
+https://3ee905090d464be5a51478fd9c642e93.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-pl_Moconomy/playlist.m3u8
+#EXTINF:-1 tvg-id="PolsatGames.pl@HD" tvg-name="Polsat Games HD (1080p)" group-title="Inne",Polsat Games HD (1080p)
+http://92.63.196.180:8080/live/74173747597177/7vfxky4rjx3j/10209.m3u8?token=Q0FaWEpZFFsXAwNWUFMEBwJXAwMDVlpTBgVTVwEHAQNeWgoACVVXVQAVGEZGFUdTUl9qWwIVAlBSAQBdGENHQ10RbVBdEwxDAgANUAJVFxoRRlxfAxUCUU4RQA1QQwheTQ9eFRtUThVQRVoFWT5RU0VbVldEDVYUDl8cRlsPbVRdDlNXXRMMQwQVGEZcEkUUCVxAXgobGgMLR0IFQAQQClYWXlUVE1UOQFlAFkxDDxRjfhceRFJAFQddQw1bDxAKGg4BTAETGkNcRGsWUBJBRFZTWFcUFQJDUhEcRlkASm9bDFxXXFJCCFpZR0YPQwQUHxBYXQheTA4QbEANUEMIXk0PXkQ=
+#EXTINF:-1 tvg-id="PolsatRodzina.pl" tvg-name="Polsat Rodzina HD" group-title="Inne",Polsat Rodzina HD
+http://92.114.85.87:8014/play/a00i/index.m3u8
+#EXTINF:-1 tvg-id="PolsatSport1.pl" tvg-name="Polsat Sport 1 (1080p) [Geo-blocked]" group-title="Inne",Polsat Sport 1 (1080p) [Geo-blocked]
+http://cdn-s-lb2.pluscdn.pl/lv/1544303/939/dash/7f74b079/live.mpd
+#EXTINF:-1 tvg-id="PowerTV.pl" tvg-name="Power TV (Poland)" group-title="Inne",Power TV (Poland)
+http://92.114.85.87:8010/play/a00k/index.m3u8
+#EXTINF:-1 tvg-id="Puls2.pl" tvg-name="Puls 2 (1080p)" group-title="Inne",Puls 2 (1080p)
+https://edge01.cdn.emitel.pl/bpk-tv/Puls2_HD/hbbtv-hls/index.m3u8
+#EXTINF:-1 tvg-id="RedCarpetTVInternational.pl" tvg-name="Red Carpet TV International (1080p)" group-title="Inne",Red Carpet TV International (1080p)
+https://fast-rakuten.okast.tv/fa2e8c4385712f9a9076eaf728c751de/channels/1a6ecfaa-40c6-41b8-8634-595c424f856e/21f67fd1-4d21-43ba-8ad8-3afac9982c25/master.m3u8
+#EXTINF:-1 tvg-id="Royalworld.pl" tvg-name="Royalworld" group-title="Inne",Royalworld
+https://ac76260b1102416c93f3d20958bfeb4b.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-pl_Royalworld/playlist.m3u8
+#EXTINF:-1 tvg-id="SferaTV.pl" tvg-name="Sfera TV (480p) [Not 24/7]" group-title="Inne",Sfera TV (480p) [Not 24/7]
+https://stream.sferatv.pl/sferatvlive/live.m3u8
+#EXTINF:-1 tvg-id="StopklatkaTV.pl" tvg-name="Stopklatka TV" group-title="Inne",Stopklatka TV
+http://92.114.85.87:8018/play/a004/index.m3u8
+#EXTINF:-1 tvg-id="TVKujawy.pl" tvg-name="TV Kujawy (576p) [Not 24/7]" group-title="Inne",TV Kujawy (576p) [Not 24/7]
+http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
+#EXTINF:-1 tvg-id="TVOkazje.pl" tvg-name="TV Okazje (1080p) [Geo-blocked]" group-title="Inne",TV Okazje (1080p) [Geo-blocked]
+https://lb2-e3-20.pluscdn.pl/ch/1523532/366/dash/2cf383bb/live.mpd
+#EXTINF:-1 tvg-id="TVRegionalnaLubin.pl" tvg-name="TV Regionalna Lubin (1080p)" group-title="Inne",TV Regionalna Lubin (1080p)
+https://tvregfull.mailfull.pl/tvregfull/memfs/e64b3e05-649c-4939-9ff6-584e79285ccd.m3u8
+#EXTINF:-1 tvg-id="TVRepublika.pl" tvg-name="TV Republika" group-title="Inne",TV Republika
+http://92.114.85.87:8018/play/a008/index.m3u8
+#EXTINF:-1 tvg-id="TVTorun.pl" tvg-name="TV Torun (1080p) [Not 24/7]" group-title="Inne",TV Torun (1080p) [Not 24/7]
+http://217.173.176.107:1935/live/tvk.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVTrwam.pl" tvg-name="TV Trwam (1080p) [Geo-blocked]" group-title="Inne",TV Trwam (1080p) [Geo-blocked]
+https://live-ch1.trwam.cf.insyscd.net/out/v1/b99041a282774d4a8fe84a54243af5de/trwamtv-live-ch1.mpd
+#EXTINF:-1 tvg-id="TV4.pl" tvg-name="TV4 (Poland) (1080p) [Geo-blocked]" group-title="Inne",TV4 (Poland) (1080p) [Geo-blocked]
+https://cdn-s-playnow-live.pluscdn.pl/ch/1502601/309/dash/e25c2c93/live.mpd
+#EXTINF:-1 tvg-id="TVC.pl" tvg-name="TVC (Poland) (1080p)" group-title="Inne",TVC (Poland) (1080p)
+http://57.128.231.171:8080/214/index.m3u8
+#EXTINF:-1 tvg-id="TVCSuper.pl" tvg-name="TVC Super" group-title="Inne",TVC Super
+http://92.114.85.87:8010/play/a00n/index.m3u8
+#EXTINF:-1 tvg-id="TVS.pl" tvg-name="TVS (Poland)" group-title="Inne",TVS (Poland)
+http://92.114.85.87:8010/play/a00e/index.m3u8
+#EXTINF:-1 tvg-id="TVT.pl" tvg-name="TVT (Poland) (720p)" group-title="Inne",TVT (Poland) (720p)
+https://live.streamtvt.pl/LiveAppStreamTVT/streams/853271271313930867905724.m3u8
+#EXTINF:-1 tvg-id="TelewizjaiTTV.pl" tvg-name="Telewizja iTTV (1080p)" group-title="Inne",Telewizja iTTV (1080p)
+https://5d84fe297ee2b.streamlock.net/sercanie/scj_florek.stream_aac/playlist.m3u8
+#EXTINF:-1 tvg-id="TopMoviesPolska.pl" tvg-name="Top Movies Polska (1080p)" group-title="Inne",Top Movies Polska (1080p)
+https://top-movies-rakuten-tv-pl.fast.rakuten.tv/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6059/master.m3u8
+#EXTINF:-1 tvg-id="TwojaTV.pl" tvg-name="Twoja.TV (1080p)" group-title="Inne",Twoja.TV (1080p)
+https://stream.twoja.tv/ttv_hls/live.m3u8
+#EXTINF:-1 tvg-id="ViasatExploreClassic.pl" tvg-name="Viasat Explore Classic (720p)" group-title="Inne",Viasat Explore Classic (720p)
+https://da9c49fa.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLXBsX1ZpYXNhdEV4cGxvcmVfSExT/playlist.m3u8
+#EXTINF:-1 tvg-id="ViasatTrueCrime.pl" tvg-name="Viasat True Crime" group-title="Inne",Viasat True Crime
+http://92.114.85.87:8010/play/a00a/index.m3u8
+#EXTINF:-1 tvg-id="WPolscePL.pl" tvg-name="W Polsce PL (720p)" group-title="Inne",W Polsce PL (720p)
+https://str.onnetwork.tv/hls/onnet-358726_hi/index.m3u8
+#EXTINF:-1 tvg-id="WorldBilliards.pl" tvg-name="World Billiards" group-title="Inne",World Billiards
+https://9a81dd4ee3884d0dbcacafaf0d81327a.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BilliardsTV/playlist.m3u8
+#EXTINF:-1 tvg-id="wedotvAuta.pl@FAST" tvg-name="wedotv Auta (480p)" group-title="Inne",wedotv Auta (480p)
+https://amg00735-amg00735c57-rakuten-de-10677.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg00735-videosolutionsagfast-wedotvauta-rakutende/cb553d1e726c678e9cd43d67d3ef42a0df2416fc087a8d6933fb4b926bc10f41f4e2a581b212bb785d9914ce1c553f080132c0099c3a0bc6da73b6512d6c6021c9c3ed64d89d1b17b2c8797368e62c4119e10f11d93b53309dbb1858dd68ec2b005ebb0d6f577fdcec0fac6b5ac58402967a7c82fc8e68312f5e56cd543fa29a7c9b1f0f5d65e94693d1605aa34f1abbd31c9df63d81b2a13ebedf52bbc33eabe7b5c98c50d7acad5b3ef4ac466f6f236f8a816ed1b835750fce1b5bcd2552213354fcac85f74f76ee2d250ca9b29fe635ad50a6fd540358406cb1d865a44989e5902bf9691a80e7d6fa575336b4c1145626b2f6a19dc1d352d742d6adf3d47f7098b94136178925f92c2f2a9ff4cf54d5954ed69b2c87bd651863808353c1cce6daa1e0c40abb20c9ccfbd76c16172d5442a054b09f6bd4319229fc975d712e202ecabb5bc094d65734102dd7d6249b797c8cd5808dd01935b0163c5fe665cb52062ced3a686eea24fdda11638b2f06807751d65737894ef9f81cfda8d5e00c58e48e91a29ebd7f4ba5b486210eed8f29b009af85251fe39768f8/106/426x240_611520/index.m3u8
+#EXTINF:-1 tvg-id="4FunDance.pl" tvg-name="4 Fun Dance" group-title="Muzyka",4 Fun Dance
+http://92.114.85.87:8018/play/a00k/index.m3u8
+#EXTINF:-1 tvg-id="4FunTV.pl" tvg-name="4 Fun TV" group-title="Muzyka",4 Fun TV
+https://stream.4fun.tv:8888/sd/4fun_sd_high.m3u8
+#EXTINF:-1 tvg-id="DiscoPoloMusic.pl" tvg-name="Disco Polo Music (1080p)" group-title="Muzyka",Disco Polo Music (1080p)
+http://185.227.34.179:8080/disco-polo-music/index.m3u8
+#EXTINF:-1 tvg-id="EskaRockTV.pl" tvg-name="Eska Rock TV (1080p)" group-title="Muzyka",Eska Rock TV (1080p)
+http://92.114.85.87:8016/play/a005/index.m3u8
+#EXTINF:-1 tvg-id="EskaTV.pl" tvg-name="Eska TV (1080p)" group-title="Muzyka",Eska TV (1080p)
+http://92.114.85.87:8018/play/a00h/index.m3u8
+#EXTINF:-1 tvg-id="EskaTVExtra.pl" tvg-name="Eska TV Extra (1080p)" group-title="Muzyka",Eska TV Extra (1080p)
+http://92.114.85.87:8016/play/a008/index.m3u8
+#EXTINF:-1 tvg-id="KinoPolskaMuzyka.pl" tvg-name="Kino Polska Muzyka (1080p)" group-title="Muzyka",Kino Polska Muzyka (1080p)
+http://57.128.231.171:8080/237/index.m3u8
+#EXTINF:-1 tvg-id="NutaTV.pl" tvg-name="Nuta TV" group-title="Muzyka",Nuta TV
+http://92.114.85.87:8010/play/a00j/index.m3u8
+#EXTINF:-1 tvg-id="PolsatMusic.pl" tvg-name="Polsat Music (1080p)" group-title="Muzyka",Polsat Music (1080p)
+http://92.114.85.87:8001/play/a00z/index.m3u8
+#EXTINF:-1 tvg-id="VOXMusicTV.pl" tvg-name="VOX Music TV (1080p)" group-title="Muzyka",VOX Music TV (1080p)
+http://92.114.85.87:8016/play/a00a/index.m3u8
+#EXTINF:-1 tvg-id="DrGMedicalExaminer.pl" tvg-name="Dr G Medical Examiner" group-title="Polskie",Dr G Medical Examiner
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883008
+#EXTINF:-1 tvg-id="Echo24.pl" tvg-name="Echo24 (720p)" group-title="Polskie",Echo24 (720p)
+https://echo24new.pl/LiveAppStreamECHO24/streams/GL0VksiIgQUS1672825288490.m3u8
+#EXTINF:-1 tvg-id="FokusTV.pl" tvg-name="Fokus TV" group-title="Polskie",Fokus TV
+http://92.114.85.87:8018/play/a00i/index.m3u8
+#EXTINF:-1 tvg-id="NewTV.pl" tvg-name="NewTV (1080p)" group-title="Polskie",NewTV (1080p)
+https://1409502578.rsc.cdn77.org/live/stream-1/chunklist.m3u8
+#EXTINF:-1 tvg-id="Polsat.pl" tvg-name="Polsat (1080p) [Geo-blocked]" group-title="Polskie",Polsat (1080p) [Geo-blocked]
+https://cdn-s-playnow-live.pluscdn.pl/ch/1502600/308/dash/20a18c30/live.mpd
+#EXTINF:-1 tvg-id="SuperPolsat.pl" tvg-name="Super Polsat" group-title="Polskie",Super Polsat
+http://92.114.85.87:8004/play/a00c/index.m3u8
+#EXTINF:-1 tvg-id="SzlagierTV.pl" tvg-name="Szlagier TV" group-title="Polskie",Szlagier TV
+http://92.114.85.87:8010/play/a00l/index.m3u8
+#EXTINF:-1 tvg-id="TVASTA.pl" tvg-name="TV ASTA (720p)" group-title="Polskie",TV ASTA (720p)
+https://5cce8c6f0e84c.streamlock.net/LiveCast/smil:PlayStream9.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVKStella.pl" tvg-name="TVK Stella (576p)" group-title="Polskie",TVK Stella (576p)
+https://stream.tvkstella.pl/stella/stella.m3u8
+#EXTINF:-1 tvg-id="TelewizjaJaslo.pl" tvg-name="Telewizja Jaslo (720p)" group-title="Polskie",Telewizja Jaslo (720p)
+https://cdn01.aztv.pl/live_tvjaslo/live_tvjaslo.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TelewizjaLuban.pl" tvg-name="Telewizja Luban (720p) [Not 24/7]" group-title="Polskie",Telewizja Luban (720p) [Not 24/7]
+http://stream.herissons.cloud/hls/tvluban.m3u8
+#EXTINF:-1 tvg-id="TelewizjaRegionalnaZary.pl" tvg-name="Telewizja Regionalna Zary" group-title="Polskie",Telewizja Regionalna Zary
+https://tvregfull.mailfull.pl/tvregfull/memfs/e64b3e05-649c-4939-9ff6-584e79285ccd_output_0.m3u8
+#EXTINF:-1 tvg-id="13Ulica.pl" tvg-name="13 Ulica (1080p)" group-title="Rozrywka",13 Ulica (1080p)
+http://57.128.231.171:8080/325/index.m3u8
+#EXTINF:-1 tvg-id="AXNSpin.pl" tvg-name="AXN Spin (Poland)" group-title="Rozrywka",AXN Spin (Poland)
+http://92.114.85.87:8010/play/a00b/index.m3u8
+#EXTINF:-1 tvg-id="AXNWhite.us" tvg-name="AXN White Poland (576p)" group-title="Rozrywka",AXN White Poland (576p)
+http://185.227.34.179:8080/axn-white/index.m3u8
+#EXTINF:-1 tvg-id="AmericanCrimeChannel.pl" tvg-name="American Crime Channel" group-title="Rozrywka",American Crime Channel
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883104
+#EXTINF:-1 tvg-id="AntenaHD.pl" tvg-name="Antena HD" group-title="Rozrywka",Antena HD
+http://92.114.85.87:8010/play/a00g/index.m3u8
+#EXTINF:-1 tvg-id="BBCBrit.uk" tvg-name="BBC Brit (1080p)" group-title="Rozrywka",BBC Brit (1080p)
+http://57.128.231.171:8080/309/index.m3u8
+#EXTINF:-1 tvg-id="BBCLifestyle.uk" tvg-name="BBC Lifestyle Poland (1080p)" group-title="Rozrywka",BBC Lifestyle Poland (1080p)
+http://57.128.231.171:8080/305/index.m3u8
+#EXTINF:-1 tvg-id="BialogardzkaTelewizjaKablowa.pl" tvg-name="Bialogardzka Telewizja Kablowa (1080p)" group-title="Rozrywka",Bialogardzka Telewizja Kablowa (1080p)
+https://bsmbialogard.pl/live/index.m3u8
+#EXTINF:-1 tvg-id="CBeebies.pl" tvg-name="CBeebies (Poland) (576p)" group-title="Rozrywka",CBeebies (Poland) (576p)
+http://92.114.85.87:8017/play/a004/index.m3u8
+#EXTINF:-1 tvg-id="CartoonClassics.pl" tvg-name="Cartoon Classics" group-title="Rozrywka",Cartoon Classics
+https://daiconnect.com/live/hls/tvup/rk-cartoonclassics/578f4b7eb725168349ec0af81b21d388/index.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.pl" tvg-name="Comedy Central (Poland) (1080p)" group-title="Rozrywka",Comedy Central (Poland) (1080p)
+http://57.128.231.171:8080/286/index.m3u8
+#EXTINF:-1 tvg-id="CrimePlusInvestigationPolsat.pl" tvg-name="Crime + Investigation Polsat (1080p)" group-title="Rozrywka",Crime + Investigation Polsat (1080p)
+http://57.128.231.171:8080/285/index.m3u8
+#EXTINF:-1 tvg-id="DisneyChannel.pl" tvg-name="Disney Channel (Poland) HD (1080p)" group-title="Rozrywka",Disney Channel (Poland) HD (1080p)
+http://185.227.34.179:8080/disney-channel-hd/index.m3u8
+#EXTINF:-1 tvg-id="DisneyJunior.pl" tvg-name="Disney Junior (Poland) (576p)" group-title="Rozrywka",Disney Junior (Poland) (576p)
+http://57.128.231.171:8080/277/index.m3u8
+#EXTINF:-1 tvg-id="DisneyXD.pl" tvg-name="Disney XD (Poland) (576p)" group-title="Rozrywka",Disney XD (Poland) (576p)
+http://185.227.34.179:8080/disney-xd/index.m3u8
+#EXTINF:-1 tvg-id="E.pl" tvg-name="E! (Poland) (1080p)" group-title="Rozrywka",E! (Poland) (1080p)
+http://57.128.231.171:8080/273/index.m3u8
+#EXTINF:-1 tvg-id="FailArmy.us" tvg-name="FailArmy Poland (720p)" group-title="Rozrywka",FailArmy Poland (720p)
+https://bd93cfed.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZhaWxBcm15X0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="Fox.pl" tvg-name="Fox (Poland) (1080p)" group-title="Rozrywka",Fox (Poland) (1080p)
+http://57.128.231.171:8080/249/index.m3u8
+#EXTINF:-1 tvg-id="LoneStar.us" tvg-name="Lone Star Poland (720p)" group-title="Rozrywka",Lone Star Poland (720p)
+https://6b88cde9.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0xvbmVTdGFyX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="MTV.pl" tvg-name="MTV (Poland) (1080p)" group-title="Rozrywka",MTV (Poland) (1080p)
+http://57.128.231.171:8080/227/index.m3u8
+#EXTINF:-1 tvg-id="NutaGold.pl" tvg-name="Nuta Gold" group-title="Rozrywka",Nuta Gold
+http://92.114.85.87:8010/play/a00i/index.m3u8
+#EXTINF:-1 tvg-id="PeopleAreAwesome.us" tvg-name="People Are Awesome Poland (720p)" group-title="Rozrywka",People Are Awesome Poland (720p)
+https://3ab76e42.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1Blb3BsZUFyZUF3ZXNvbWVfSExT/playlist.m3u8
+#EXTINF:-1 tvg-id="PolsatComedyCentralExtra.pl" tvg-name="Polsat Comedy Central Extra (1080p)" group-title="Rozrywka",Polsat Comedy Central Extra (1080p)
+http://57.128.231.171:8080/290/index.m3u8
+#EXTINF:-1 tvg-id="PolsatJimJam.pl" tvg-name="Polsat JimJam (576p)" group-title="Rozrywka",Polsat JimJam (576p)
+http://185.227.34.179:8080/jimjam/index.m3u8
+#EXTINF:-1 tvg-id="RadiowaCzworka.pl" tvg-name="Radiowa Czworka (1080p)" group-title="Rozrywka",Radiowa Czworka (1080p)
+https://stream14.polskieradio.pl/pr4_video/video_pr4.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenViki.us" tvg-name="Rakuten Viki Poland" group-title="Rozrywka",Rakuten Viki Poland
+https://fd18f1cadd404894a31a3362c5f319bd.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_RakutenViki-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RemontyTV.pl" tvg-name="Remonty TV (1080p)" group-title="Rozrywka",Remonty TV (1080p)
+https://prx-y5cf8.4vod.tv/playout/repl-abr67/index.m3u8
+#EXTINF:-1 tvg-id="ThePetCollective.us" tvg-name="The Pet Collective Poland (720p)" group-title="Rozrywka",The Pet Collective Poland (720p)
+https://6ec8627d.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X1RoZVBldENvbGxlY3RpdmVfSExT/playlist.m3u8
+#EXTINF:-1 tvg-id="ExtremeSportsChannelPolska.pl" tvg-name="Extreme Sports Channel Polska (1080p)" group-title="Sport",Extreme Sports Channel Polska (1080p)
+http://57.128.231.171:8080/262/index.m3u8
+#EXTINF:-1 tvg-id="GloryKickboxing.us" tvg-name="Glory Kickboxing Poland (720p)" group-title="Sport",Glory Kickboxing Poland (720p)
+https://6f972d29.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0dsb3J5S2lja2JveGluZ19ITFM/playlist.m3u8
+#EXTINF:-1 tvg-id="StrongmanChampionsLeague.uk" tvg-name="Strongman Champions League (720p)" group-title="Sport",Strongman Champions League (720p)
+https://rightsboosterltd-scl-1-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="WorldPokerTour.us" tvg-name="World Poker Tour Poland (1080p)" group-title="Sport",World Poker Tour Poland (1080p)
+https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/playlist.m3u8?ads.xumo_channelId=88883102
+#EXTINF:-1 tvg-id="399726" tvg-name="ALFA TVP" group-title="TVP",ALFA TVP
+https://sdt-epix9-56.tvp.pl/token/video/live/65184034/20261008/2960388812/SA03YuTEqmWxbje9fCHkS6cuRhE5oO5tAKJA_vhMly4xGO5PxoPkt9-uBu-_xSelX2_LIqP4P_PZ200T219Jdz2Ia4DKjug35BkDqDUh7LIvu1843CTOXTsJXYlk8IWtyA3Ruoc18ldvqjF7nNfBruSRuBsX782BVmZzq9G-6Jk/156/master.m3u8
+#EXTINF:-1 tvg-id="399729" tvg-name="TV Bielsat" group-title="TVP",TV Bielsat
+https://sdt-thinx14-194.tvp.pl/token/video/live/64914904/20261008/2960388812/p4ipEP2M8hXwtFV50zuxTcMA62ZfBWIrX9DMM775XdRTmhaVI0lzWffiQlu--sXVwD_rEzGsj6Z1iLqa0NsW4izajC8-jqp32AThjeXVGFDKzNzgUxvD1dLKVngK-OBMBIOHREhR4MMfyskzxWruAH3fZNU60VGir0QpaUnJ8qM/156/master.m3u8
+#EXTINF:-1 tvg-id="399704" tvg-name="TVP ABC" group-title="TVP",TVP ABC
+https://sdt-epix6-53.tvp.pl/token/video/live/51696812/20261008/2960388812/L9MrRvEGnhlUWhbQ6i1visB_ufz2Wzgz-YznKvFHEdNzxbQMgCFeaRLmF6DcN-xWGclnwUvEDiCE9HoxTzfUigok2GJcB-tO66dbmYxeMhKTuSF0u8DokkjvD6rxf-qY39P38S3e0Y_JEeUYDrjsP93yC6UNn6z2wzuhbZNhFX4/156/master.m3u8
+#EXTINF:-1 tvg-id="399727" tvg-name="TVP ABC 2" group-title="TVP",TVP ABC 2
+https://sdt-thinx7-187.tvp.pl/token/video/live/57181933/20261008/2960388812/I2o6TYefbuwuHC0I4-omeFw_WsOuPrqD5k45fxq8CcmXgzMPjBSyneJfEVFoMTyOHAI7R1fqZ5qmOFq7pdOlqy7l_rrgSp2L7YjXQdbt496M5GrPmkMVJKtfUloYmqtc_StmmkJnIGnBn1t4U92btDhBpQUyHoKEbAm3-v747yY/156/master.m3u8
+#EXTINF:-1 tvg-id="2543014" tvg-name="TVP Barwy szczęścia" group-title="TVP",TVP Barwy szczęścia
+https://sdt-thinx5-185.tvp.pl/token/video/live/69501181/20261008/2960388812/TjM1E26JOiVM2-AFTgSCxD45z8bUiZP6QSrm7nEb0htjrJvwNV5KXDCX_p0L75XsBLHIurIHfZQqQDWftFmXhh4moR-kbwlcdALVPwY-ZMGncCwf5rAwSBtDb6gi6Ly5PI8HWjKBmWtaXBCjdIEzJCT9lQnR-K9sBiek4g0lj08/156/master.m3u8
+#EXTINF:-1 tvg-id="399721" tvg-name="TVP DOKUMENT" group-title="TVP",TVP DOKUMENT
+https://sdt-epix6-53.tvp.pl/token/video/live/53795159/20261008/2960388812/7tQBKyxBUqpN2VPHXjr-akGabqKwqMXxCrBkJ9k8EUr-TlHH52e-sdUTTPzD5nhKqtFa2WYkOSO2NawU3qRbewL529Obdbn9epvk_CgamZDczopOxtr_mXObQv4qlYkKQBnAyJJEAoMlWfGRjL-7oYhyliqnVMw5PEXirPG7ixI/156/master.m3u8
+#EXTINF:-1 tvg-id="399703" tvg-name="TVP Historia" group-title="TVP",TVP Historia
+https://sdt-epix6-53.tvp.pl/token/video/live/51696819/20261008/2960388812/TN7QYcJ1_Z3C5RzqqBAYbEGSd71ILU41yTum9dXalRdjRd9P8oHoMnGzri4nSPZifIo34tev6o3OrgkGGiPlO21EVegpS7-fVXsx77aQakmA0ZxnZs4VYwWoUZRv3m_6Dn7XpI8uOjDanTwxBwJFGnXIjiHuakZg5BtLw-fB44Q/156/master.m3u8
+#EXTINF:-1 tvg-id="399725" tvg-name="TVP Historia 2" group-title="TVP",TVP Historia 2
+https://sdt-epix11-58.tvp.pl/token/video/live/57181934/20261008/2960388812/lKEL25VmGCInbskZiuuS6LgG7M-J2_RZyMnsvOiU6mOPEbRguJzPBnRkmWZOnV4_ZXCHaEodlNNmrDsYzOuSOwQ0OtsWMtui2FKkEfgg_PyyrZ5XIBwWUHp3yGWnuBn4xMTXfOVrJGH61JtNqhPy83V__lmTsP0p2OjmMhiME4LLRRj8k-HNIkxNA4nyHQZk/156/master.m3u8
+#EXTINF:-1 tvg-id="399699" tvg-name="TVP Info" group-title="TVP",TVP Info
+https://sdt-epix6-53.tvp.pl/token/video/live/51696820/20261008/2960388812/6cev5D0op36RzjRYXuU7REWWid1w6hnB6f9vrv3YYu5vgE1yiOMSfFtZJUQf66g0MwdDhNOgwEIRw0np2mSx2S2gQn0PNcThC0mQolxYytzW8B_uyBE9URtJ5tAk4kn6K3ABAqnKIQh49vokFWtBT2c1kFv3EtrZtmuwm-0zbH4/156/master.m3u8
+#EXTINF:-1 tvg-id="2543049" tvg-name="TVP Klan" group-title="TVP",TVP Klan
+https://sdt-thinx7-187.tvp.pl/token/video/live/70707771/20261008/2960388812/TrCM2E7OTW9CMsn5W5frQqYPg7Ic2FLUIV6mqP3etFsgBcDACjK4utZ_BBAhmDKbjjYovtpHRdr5I0JuYyGXmN4yuU176LF_2tanRJ_jmJTHvUppdNR-TPMU0P3b2qPJVGaKsWviP7sPY2IefqmBsfdJLBjAJi6qsAM3CykpQ68/156/master.m3u8
+#EXTINF:-1 tvg-id="399701" tvg-name="TVP Kobieta" group-title="TVP",TVP Kobieta
+https://sdt-thinx11-191.tvp.pl/token/video/live/53795158/20261008/2960388812/0_h3j3P-1PDefTvyn76Gpocoq7ZJ7qsKhF4uIGJ33DLm3Kg-6WiqHCk5q6Eb36VGalGxxmmXqArn3lBii65tUnDNorg9t_Ytt1VcLxYf0XAa3PhSfUTELU9Jsoo6MwLwAh98zw08B-EySxfftxAGiaYjMKXTKjZj0PI2h9E75tk/156/master.m3u8
+#EXTINF:-1 tvg-id="2543050" tvg-name="TVP Kryminały" group-title="TVP",TVP Kryminały
+https://sdt-thinx3-183.tvp.pl/token/video/live/70892600/20261008/2960388812/ACmrWJaM3-8eZ5fhfu5LSwgKFRTXYmXXiog0ooMz5Mz9BDK4Lbu7SyZI-y7wBey1ODs9gsTWIeCAUtPHAPPKupW8diLP7uLZXpgksu_aEXdGP0TyY6Ynay5NbSVnjwXCGA07qILVFYuiko9MQkkUWtDpGsjs31hxfX8odjEiZ1g/156/master.m3u8
+#EXTINF:-1 tvg-id="399700" tvg-name="TVP Kultura" group-title="TVP",TVP Kultura
+https://sdt-thinx6-186.tvp.pl/token/video/live/51696822/20261008/2960388812/qdFhMv-mqljIIUPGxNJp8ADWMjm8bNIUwPwtV9Mu9txKpt9QTP1j7VBAki0TbHjYw1uCa7hAlFESw0qMMKn2nv7hvPuo9yKumbRTa7wdlMwL-rJz2_knySUQK8O4gY0tcOzSrVMeRomrVt_MDrHVy2zQu94zVo3x3HjZINK9yeM/156/master.m3u8
+#EXTINF:-1 tvg-id="399728" tvg-name="TVP Kultura 2" group-title="TVP",TVP Kultura 2
+https://sdt-epix10-57.tvp.pl/token/video/live/56275381/20261008/2960388812/5p3XUPxzZG70W9rtValBfVH49pu261mk5a_DHUp7aP8sD4X3-SNTfLjQF27FmzvQWmC9h4P3bSF-kTw6xTZB226Zze7D36OUmlsu0BTq_kX1eZVRtrV4FiMqNdN8DotPI9YPkJXV-0CBnSsumI6tEZTB6Akzu_AQsAS3vyNVvzfGBPa0aNsm8DpXAXiE0r0C/156/index.m3u8
+#EXTINF:-1 tvg-id="2724087" tvg-name="TVP Miłość" group-title="TVP",TVP Miłość
+https://sdt-epix6-53.tvp.pl/token/video/live/91410855/20261008/2960388812/XWfCFyylvJ8zwhYYyXkdKC7gPlAhUwhfX-Zt5TwkvPhMIQfOIpEhKwkngNtRGo7_xTdx9dNZJW7pWYJOyihhz3WPruIiFKCPaMgip4wkKAMy5V8r_02DKWMmXXWWWwz7Hm8JX_xmOcEKkn32B1qB0-cas0D0OzQIHa2RKyXdQGs/156/master.m3u8
+#EXTINF:-1 tvg-id="2999109" tvg-name="TVP Muzyka i Koncerty" group-title="TVP",TVP Muzyka i Koncerty
+https://sdt-thinx3-183.tvp.pl/token/video/live/92251082/20261008/2960388812/C5-MxSo10e9cc-_qRnUwSX_YvY_VeHS-hF6ZpjSbrs0do0I6IS8521qhQI1gO8ONJfYu47tNiQZ9CVrACgaNrHJwEidJQ2vWRu3PNC-rW1fSlrukMMs1lThm7SEMpkNx3ZN6u1Ti69mr27ktXp7u4c3A8fCU9ZnnB45wGa674v8/156/master.m3u8
+#EXTINF:-1 tvg-id="2504621" tvg-name="TVP Na dobre i na złe" group-title="TVP",TVP Na dobre i na złe
+https://r.dcs.redcdn.pl/livehls/o2/TVP/live/fast_na_dobre_i_na_zle/live.livx/playlist.m3u8?fmp4&ad_session_id=roGV2qai7VkhFiq6DsPDuVIfo1MPWpHRzrLZ49CyRVD.Y7
+#EXTINF:-1 tvg-id="399722" tvg-name="TVP Nauka" group-title="TVP",TVP Nauka
+https://sdt-thinx7-187.tvp.pl/token/video/live/71345993/20261008/2960388812/HWpJnfD9MqXU-yxqVZ2g8YrgYYDDQzSK3FO8MaDikHqH1xHnzipxgC1ubMMWqA2To3jAYTNW2iihpw658fDc2F50DId2lVd49-z4eyhIU_mvQX_DJztgiRGytglBUj-lvDAcXFQZbY3lKSXVD61721XEOXVpet653Ju-Wce_0po/156/master.m3u8
+#EXTINF:-1 tvg-id="1065594" tvg-name="TVP Parlament Sejm" group-title="TVP",TVP Parlament Sejm
+https://sdt-epix14-61.tvp.pl/token/video/live/75458913/20261008/2960388812/YWTRfM3tDCkzKgzbzExYooRp1-7OZJbG9pCJcPdZHsYqCrniYbr097o_KaztASHvxQskn9_Eoht8VObY5KGQaHcIo8M03MyftJ04h7H0TcrXCVR6792Yg3t6tSy5rtkyM212IiVskdZPC8CVL5a2EzYTZba9GId3vk6-MhU6vmw/156/master.m3u8
+#EXTINF:-1 tvg-id="1065595" tvg-name="TVP Parlament Senat" group-title="TVP",TVP Parlament Senat
+https://sdt-thinx11-191.tvp.pl/token/video/live/75458927/20261008/2960388812/ArvsUcgTowcbZfvi2wRP90Lob6xAAFOGwr9WwiYh-QRXNnlaYdXiTeAOnMf2baXBDUUsBO2BO1T5IvOZa-cYbLaax95BaW1Yu8UGAH5keZehQHlRxdkPYJTAnFEfNOLWB3MHtv2M0ad0-T9kQ8J5pfv-B2bTmzYA0kibR8P9W_I/156/master.m3u8
+#EXTINF:-1 tvg-id="399723" tvg-name="TVP Polonia" group-title="TVP",TVP Polonia
+https://sdt-thinx7-187.tvp.pl/token/video/live/51696824/20261008/2960388812/1p84w1XQs9q_MXJ3vBpOzyHZ2C6HXF8GWVmZ0PKYsfrBryDlpJ7P5jMvPiox6nZtrXnSxfWF_GICO2K-3AmOkwlVMgcJarJCys_P6Nv5Uv6h1TM3PpBOO2G5kdiqs7yL5zl5aV8wp5qDuCVBxbI4-Tn9-DQh1n71W0FuWPd_AcY/156/master.m3u8
+#EXTINF:-1 tvg-id="399724" tvg-name="TVP Rozrywka" group-title="TVP",TVP Rozrywka
+https://sdt-epix6-53.tvp.pl/token/video/live/51696825/20261008/2960388812/mB8yRTOB1rsq1BrYP4xmDUgkP1A9YpV3GMUuS0EohsV6OF4oLL0NN31JvdZbjPzOQ7wiHqnHgFsha5OTeN5zQe5bInGgbQWZJxe0Qaok8ctBm1lfar0Dz_VwhkGLqBBE6BD8hTYu2EdUm7_JHGlkrv7ZBV8xHBuk4Nn8ZBQuEKI/156/master.m3u8
+#EXTINF:-1 tvg-id="399702" tvg-name="TVP Sport" group-title="TVP",TVP Sport
+https://sdt-thinx10-190.tvp.pl/token/video/live/51696827/20261008/2960388812/IIQb5CqBIt_h3JxqBtNKXxAPMgube0_l87Z60ANYYWzwg09H8qXee8ezBn121XixE-0GGhnMXKSjdu2HluDzC7NbXHkcs_0qe76IiVHHQvYdZ0BV-tqDwMXJ_ujGT8_OIb1SOcZ8Xlrv8PrDmqBp78S9g0Z1dsXVM6Z82yy96bQ/156/master.m3u8
+#EXTINF:-1 tvg-id="999687" tvg-name="TVP WILNO" group-title="TVP",TVP WILNO
+https://sdt-thinx10-190.tvp.pl/token/video/live/74979895/20261008/2960388812/6yUqjGlmVsAppwqO9i8B3g545VASFJK64SKo4JVitSOXRpDBG0f9817wWJlO-ih_8E5pGPb5Hqx_ZFeXK6vc42V3xwsVTe8vXQf-tBe2H6hPWZtmeSnSU04x9ls2YHzSwSkRAombkWvyRtpV_rUyhEPAGEd8A10FQLQjDJDPPaM/156/master.m3u8
+#EXTINF:-1 tvg-id="399731" tvg-name="TVP World" group-title="TVP",TVP World
+https://sdt-thinx3-183.tvp.pl/token/video/live/57181932/20261008/2960388812/9Nkya0vHS1xzfDvfyGzyF5NLzYSKbX-E21dC7nK-v-JesBF0M6VHILH_KM9F54UmhH0xa3FGWyXYhqCdnsXwvo8lGw8RniDo__mzt195Kz0O0GLg12CXdzLN36hDG8c6IC4w0Bi49aJYSvKmrdBzF8De2jNoerNu1sC2yxEZqGk/156/master.m3u8
+#EXTINF:-1 tvg-id="399697" tvg-name="TVP1" group-title="TVP",TVP1
+https://sdt-epix9-56.tvp.pl/token/video/live/51689486/20261008/2960388812/gWuOiHmBglUOF0AzZrX7Zx02hhuy-NpAuCi6_0plENyMz2e8GDGGf0ru_Jhdy41eeLfnv4TQ9B9jPW_--T3jLYQXBwBSCXswpdayb9snsIls3aEDGVLS-rqthUdJ9SxnQK1zaSwvGX_lZYgkDG3XdxH_jvofxlwCYrJO-h8QdZg/156/master.m3u8
+#EXTINF:-1 tvg-id="399698" tvg-name="TVP2" group-title="TVP",TVP2
+https://sdt-thinx8-188.tvp.pl/token/video/live/51696811/20261008/2960388812/T6LPGwkjjmlkGQiHJvbLIX8dfLN-ku49eJ4x5P0jft1oIpl6EDxcuhpqhBrRTiLstK3IP8hJdTmdFL31WD4xZ_vFt2lBLQYqtim4oIymYgprzh8bFxat3oOEf6oMAZNhh0fDXE5Z5lNDkflJxJiZgkiSUK8JWbM2AY6QSAjYX_o/156/master.m3u8
+#EXTINF:-1 tvg-id="399732" tvg-name="TVP3 Białystok" group-title="TVP3 Regionalne",TVP3 Białystok
+https://sdt-epix7-54.tvp.pl/token/video/live/71345939/20261008/2960388812/TKKnnDQiWOuIL5BNeIPJHgB4lEoFodF3YWvrdA9SsFA-2RO5ch2KvEdajVZkjIA5kbUdmSqWJeUO8cWcgaQF0j1jvCMeT_lXjvsV4Vl9OoGsm2OUqJMHuq-EpJTPTSPBhHVMFgiBrhfol4MSsBsf_TydS1L2HmhjyDkbQ5zU6EE/156/master.m3u8
+#EXTINF:-1 tvg-id="399740" tvg-name="TVP3 Bydgoszcz" group-title="TVP3 Regionalne",TVP3 Bydgoszcz
+https://sdt-epix9-56.tvp.pl/token/video/live/71345962/20261008/2960388812/LiB5r_-1Nj18vBL4JMxPPPN5PW7vRuX6EG0jat-rkwuTA_MtEbuouPrmPwTYCNGJow0KBHG0dMe26qiMBDvnwuxDQJXcp63AaMk7utF_ngFwI_TEcnZOzfpIPG3BZmNJWailGdS3fV62TLygILZ2CNJbRFDHpI3fkbxnWv6HyWU/156/master.m3u8
+#EXTINF:-1 tvg-id="399741" tvg-name="TVP3 Gdańsk" group-title="TVP3 Regionalne",TVP3 Gdańsk
+https://sdt-epix13-60.tvp.pl/token/video/live/71345915/20261008/2960388812/zu9vynUVMHDCzWjOxofBaVDENknLCXhgP5Afe3Zs782DKjxDcTsB0zKrPhA9SiyuUpoimlT9aQqB7ursvn4PMf_b10PtIonWkrHaKRDh5gSNrn4l-QRCvkZFXYekGY9UgB9NJxyio6_DRy3n-b194vsYRYG-WKX9W7O5uPVEfXw/156/master.m3u8
+#EXTINF:-1 tvg-id="399742" tvg-name="TVP3 Gorzów" group-title="TVP3 Regionalne",TVP3 Gorzów
+https://sdt-thinx13-193.tvp.pl/token/video/live/71345976/20261008/2960388812/at1uX-z8AhZhjc1tSHfHvAWd5ssAAE1-VaGRYEdMdyU3vhU7sYuWIi7adkWBKpqwLsOeYUVZB-EsDKH81u1F_eIhEWojIKC1fjLFrD40Tt3BQbnyXMwNmoFgpzFhKLJ9aY20qI2xylXXngVYzSXGS5ERWhRrSZ_jRYTAg46U0tg/156/master.m3u8
+#EXTINF:-1 tvg-id="399743" tvg-name="TVP3 Katowice" group-title="TVP3 Regionalne",TVP3 Katowice
+https://sdt-thinx11-191.tvp.pl/token/video/live/71345996/20261008/2960388812/VMrrieaBp34UD6HmYWteRYpmRRAo2T-7XkotfKNZ13hwO2ULpMrcTve3IhE5NQ-nNH1B3roWseUDrAX-Z_bt0ek_DjyYVzyQn8rEf9zrAgEsDfmGFhXkr5aa-4BND2Q2JroYDQaTw-M9xqwIi0mRG176Ig4XqNt2hl0D6npNGHY/156/master.m3u8
+#EXTINF:-1 tvg-id="399745" tvg-name="TVP3 Kielce" group-title="TVP3 Regionalne",TVP3 Kielce
+https://sdt-epix12-59.tvp.pl/token/video/live/71345997/20261008/2960388812/el1yo0HtEM92GsPT0e9ioKn7Uloeznreq0IZHbFhllBkmrf8Vxxi3rNrjLo-PXDHfqAu6tpdd9TCSb7jcq5D34o_36MU8R2EYyuvZ_fFOg9kgXiYApGDIPKfiOFoj41jNXh97xfS7W-6XWD7YWjCKqJp_6gG4rPs0chRddN41M4/156/master.m3u8
+#EXTINF:-1 tvg-id="399746" tvg-name="TVP3 Kraków" group-title="TVP3 Regionalne",TVP3 Kraków
+https://sdt-thinx5-185.tvp.pl/token/video/live/71346000/20261008/2960388812/2gdmljcHfzC5urivCiidyRygA5BTJAt_ihPE2tNAZ9sqK5QlgYBIQ3Shh-oTGYBSibFnHPBKOXZB3RpplH3kndUic4PWPGoLfQmq1akDbBY709oaxLAWsqtwnw1BDm8MldkTRjNVHMn0QL98hcR1aGGvPqoEuNrM42-0W02llBg/156/master.m3u8
+#EXTINF:-1 tvg-id="399748" tvg-name="TVP3 Lublin" group-title="TVP3 Regionalne",TVP3 Lublin
+https://sdt-thinx4-184.tvp.pl/token/video/live/71346005/20261008/2960388812/gmoVAgyzjt72zRAnvRi-oWRZ1z6O4vS6PxSwo9NIFT3EsleOCQcsDsKF6K_8voclkwyecTj39IfG_ZXc5CHwdjGjNT-yScWnm5MC-LU2uZdFImLYCa4bi154xBTBd96sgvBTcEISolJ4huviDxGtCvmgNUAwsJveU_EgDgm1eKA/156/master.m3u8
+#EXTINF:-1 tvg-id="399749" tvg-name="TVP3 Olsztyn" group-title="TVP3 Regionalne",TVP3 Olsztyn
+https://sdt-epix10-57.tvp.pl/token/video/live/71346007/20261008/2960388812/fl2qYubR2rRQ5KbKWY5OfwGwr9WCtQOlYSp8KOnxjsnGnC-gYzt_dCCrYfxka-u2UMn0_6BlwpyRl4YKqIh0x88C3EUow5GBQUNycq-Ah2ClSbj4_akiStjZeSgalVIqGOCJk7xheMsfFgFVoKPs55yLyzzfuN9O2fXn6Yu41sQ/156/master.m3u8
+#EXTINF:-1 tvg-id="399750" tvg-name="TVP3 Opole" group-title="TVP3 Regionalne",TVP3 Opole
+https://sdt-thinx11-191.tvp.pl/token/video/live/71346013/20261008/2960388812/5DPF5ra8Sn6iE-OKzjc3N1ngzh4jNKE0oEYAsUYAC-H3hhabRYHxeTrZ-IqTSR8t4zgQFhcNGLwTgHplMumF1OMKygko3l97PssGFQtfBLAk4NaLQIPXTt31CaL5OqJZ-XtIfp126pHGWq-RFG6HA1_uTGGCWjo1SVFxAzttDz8/156/master.m3u8
+#EXTINF:-1 tvg-id="399751" tvg-name="TVP3 Poznań" group-title="TVP3 Regionalne",TVP3 Poznań
+https://sdt-epix8-55.tvp.pl/token/video/live/71346014/20261008/2960388812/Dze0BSGG-BSKiOOUHblsnc41J8pchEL4BxqnMxZSHgCxK4v9oIWCFU-f8pDfYQednQWvunXp84YJC3bafapwP5kUw2UmOUrlqGb1gTLifTn3_7cSN0KZZg75L6g3P28Qycqz0kxFV5xEvZZ0GbRu98qAyl82oCwN1KqaxgLiYZ8/156/master.m3u8
+#EXTINF:-1 tvg-id="399752" tvg-name="TVP3 Rzeszów" group-title="TVP3 Regionalne",TVP3 Rzeszów
+https://sdt-epix8-55.tvp.pl/token/video/live/71346017/20261008/2960388812/WeiSnKuzVcIpkSIGaQiRo8jLeye-7tzNB1U43Qks-6dzmsCmK9rrzQj6wXRLTTsRO-SAYY7xo5Z5Ja6B2D7UnpAPtVoBjI-AMGoFTXTc2OR4EG1WwC2ZP0gxW6FUXbF701loiclzkPCL5cJPBrv-dfwrcepL0lMN5wkyGHucwyc/156/master.m3u8
+#EXTINF:-1 tvg-id="399753" tvg-name="TVP3 Szczecin" group-title="TVP3 Regionalne",TVP3 Szczecin
+https://sdt-epix11-58.tvp.pl/token/video/live/71345990/20261008/2960388812/wKRkNkh3xTQaMaW2Z6rHwcbIa02cBy88mJ59LnZLM031t4YDK8qhKJM677V-iuKuJ90QWpM-QgG1QTCMxZSE2mAjnYo4tak2UG197DxPee3xKwYibD3X5JoPEe8eYkAZmf4ojYp5MpIgPNor3V5g3GUVvoYMECbQNCMTJhYO7WA/156/master.m3u8
+#EXTINF:-1 tvg-id="399754" tvg-name="TVP3 Warszawa" group-title="TVP3 Regionalne",TVP3 Warszawa
+https://sdt-epix14-61.tvp.pl/token/video/live/71345991/20261008/2960388812/Da2ssrW_uHpqfAU5jfvFPMgcc-YQ9rTbRu4gVF-8cIp-hy8qHKkXBEYWG9TrFDGU0k3upJDPgSZNqCPy7N1F6ZAGuTNZyrNwyqS5M7TVJ9eeazeiDt_H9HnIzsT-eflgX6zVqu7HD-HQiGaITaOaMMfmXa5fuH-BbV4R0HjOySI/156/master.m3u8
+#EXTINF:-1 tvg-id="399755" tvg-name="TVP3 Wrocław" group-title="TVP3 Regionalne",TVP3 Wrocław
+https://sdt-thinx14-194.tvp.pl/token/video/live/71346019/20261008/2960388812/C-H7YZcZsOIDgCyDvyBLPXhOPoW4rOmEkN4FW9mGrx4cJ8s7h0DSTQ3SoFmR7POeHznmhr8bCAbPaceMBAmN_12RdxWd1zwSj9AkOb2daJzV8QwNDvmqqpgP14Bb2qnMt3xWVN3ygtTeLfsimho9Uqgkn1qL-ioqSKe7qWVNLLs/156/master.m3u8
+#EXTINF:-1 tvg-id="399747" tvg-name="TVP3 Łódź" group-title="TVP3 Regionalne",TVP3 Łódź
+https://sdt-thinx4-184.tvp.pl/token/video/live/71345979/20261008/2960388812/DT1d9zEGPgT3hp12pE5s1QHLLaAwIj1GiDIlCtIHbPUtKghFbiJYMIy08XcBUnD1Cir4ztDB01hTJCrVx4J1y7uvmyCCY93DtzeYaALkFDqRzwzEEpk4fEimdBH6vns2apICZ-2APhDGtnDDWxf0c-kUhsg2QXtFYkAltSP_ZB0/156/master.m3u8
